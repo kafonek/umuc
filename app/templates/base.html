@@ -1,0 +1,18 @@
+{% extends "bootstrap/base.html" %}
+
+<!-- Flask/Bootstrap/Jinja blocks to use: https://pythonhosted.org/Flask-Bootstrap/basic-usage.html#available-blocks -->
+
+{% block navbar %}
+<!-- check out my docs at http://getbootstrap.com/components/#navbar -->
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <ul class="nav navbar-nav">
+                <li><a class="navbar-brand" href="/">Home</a></li>
+                <li><a href="/hw1">Homework 1</a></li>
+                <li><a href="/hw2">Homework 2</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+{% endblock %}

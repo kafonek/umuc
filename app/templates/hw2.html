@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block title %} CMIS 141 HW2 {% endblock %}
+
+{% block content %}
+
+<p><i>
+(25 points) Write a Java program to simulate a pick 3, 4 or 5 lottery drawing. A lottery game of this type
+will draw values between 0 and 9. You should use the Math.Random() or the java.util.Random() class to
+generate the values in the lottery drawing. The program should prompt the user for which lottery game
+they want to play. The program should also ask how many times they want to play the game. The output
+should show the numbers picked for each game and the sum of the numbers of all games. Here is a
+sample run:
+</i></p>
+
+<br/>
+<div>
+<p>Which lottery game do you want to play (Enter 3 for pick-3, 4 for pick-4 or 5 for pick-5? <i>3</i></p>
+<p>How many games would you like to play? <i>10</i></p>
+
+<p>Thank you! The numbers selected were:</p>
+<pre>
+3 4 9
+2 4 7
+3 3 1
+0 3 2
+9 3 1
+9 2 4
+4 5 2
+1 1 0
+0 1 7
+8 6 3
+</pre>
+<p><b>The sum for all numbers picked was: <i>107</i></b></p>
+
+{% endblock %}
