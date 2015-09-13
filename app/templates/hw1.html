@@ -18,5 +18,21 @@ user. The program should prompt the user for the two integers and the operation 
 <p>Enter the operation: <var>+</var></p>
 <p><b>The results of 24 + 4 is 28</b></p>
 </div>
+</br>
+</br>
+</br>
+
+
+<p>My solution:</p>
+{# The form will be created and provided by the function in views.py #}
+{% import "bootstrap/wtf.html" as wtf %}
+{{ wtf.quick_form(form) }}
+
+{# Plan to have the output of the form submission on the same page #}
+<div id="output">
+	{% if output %}
+		<p><b>{{output}}</b></p>
+	{% endif %}
+</div>
 
 {% endblock %}
